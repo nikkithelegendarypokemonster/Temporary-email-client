@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config()
 const mongoose=require('mongoose')
 //Db Connection
-var DB_URI="mongodb+srv://Nikki:HerbieChap1899@emailserver01.mqulb.mongodb.net/EmailServer"
+var DB_URI="mongodb+srv://<Username>:<PASSWORD>@emailserver01.mqulb.mongodb.net/EmailServer"
 mongoose.connect(DB_URI,{useNewUrlParser: true, useUnifiedTopology: true},()=>{
   console.log("Connection Successfully");
 },e=>{
